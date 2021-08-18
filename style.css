@@ -73,7 +73,7 @@ background: #120D3B;
 .chlenstvo__bef::after{
     top: 34px;
     content: "";
-    background-image: url(Ellipse\ 46.png);
+    background-image: url(Ellipse46.png);
     width: 500px;
     height: 500px;
     z-index: 100;
@@ -111,7 +111,7 @@ color: #A2A4BD;
 .bubu::after{
     top: 34px;
     content: "";
-    background-image: url(Frame\ 8016.png);
+    background-image: url(Frame8016.png);
     width: 68px;
     height: 68px;
     z-index: 100;
@@ -446,5 +446,143 @@ width: 61.51px;
     }.star5{
         left: 70%;
     }.star{
-left: 90%;
+        left: 90%;
+        top: 100vh;
     }}
+// leadership page
+.leadership{
+   
+
+    &__title{
+        font-family: Open Sans;
+font-size: calc(25px + 23*(100vw / 1440));;
+font-style: normal;
+font-weight: 700;
+line-height: 51px;
+letter-spacing: 0px;
+text-align: left;
+color: #F7F7FC;
+width: max-content;
+margin: 0 auto 32px auto;
+
+
+    }
+    &__hr{
+        margin-right: auto;
+        margin-left: auto;
+        width: 80px;
+        border: 2px solid #FCFCFC;
+        margin-bottom: calc(47px + 73*(100vw / 1440));
+    }}
+.leaders{ 
+    margin-bottom: 129px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    @media (max-width:1000px){
+        align-items: center;
+        flex-direction: column;
+    }
+    &__item{    
+        @media (max-width:1000px){
+            text-align: center;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        width: calc(90vw / 3);
+    }
+    &__img{  
+        @media (max-width:1000px){
+            margin-left: 0;
+        }
+
+        margin-left: -47px;
+    }
+    &__name{
+        margin-top: calc((-79px) + (-2)*(100vw / 1440));
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: calc(19px + 5*(100vw / 1440));
+line-height: calc(36px + 15*(100vw / 1440));
+color: #FFFFFF;
+    }
+    &__about{
+        margin-bottom: 24px;
+        font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(15px + 2*(100vw / 1440));
+    line-height: 180%;
+    color: #FFFFFF;
+    }
+    &__social{
+display: flex;
+
+    }
+    &__btn{
+        cursor: pointer;
+        display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+        margin-right: 8px;
+        height: 56px;
+width: 131px;
+left: 0px;
+top: 0px;
+border-radius: 16px;
+background: #0e1046;
+border: none;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 20px;
+color: #FFFFFF;
+
+    }
+    
+}
+
+
+// contacts page
+.contacts{
+    &__title{
+        font-family: Open Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0px;
+text-align: left;
+margin-bottom: 24px;
+    }
+&__text{
+    font-family: Open Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 48px;    
+}}
+.contacts-info{
+&__rows{
+
+}
+
+}
