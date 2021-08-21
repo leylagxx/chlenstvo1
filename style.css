@@ -1004,7 +1004,7 @@ body {
 
 .missionbg::before {
   background-size: 100%;
-  background-image: url(missionbg.png);
+  background-image: url(/missionbg.png);
   position: absolute;
   content: "";
   width: 73vw;
@@ -1017,11 +1017,16 @@ body {
 @media (max-width: 750px) {
   .missionbg::before {
     bottom: 0;
+    top: unset;
   }
 }
 
 .goals {
   position: relative;
+}
+
+.goals__row {
+  padding-bottom: calc(80px + 109*(100vw / 1440));
 }
 
 .goals::before {
@@ -1031,6 +1036,8 @@ body {
   content: "";
   width: 50vw;
   height: 100%;
+  mix-blend-mode: overlay;
+  opacity: 0.3;
 }
 
 @media (max-width: 600px) {
@@ -1092,5 +1099,58 @@ body {
   .goals__subtitle {
     text-align: center;
   }
+}
+
+.bitcoins1 {
+  position: relative;
+  right: 182px;
+  bottom: 89px;
+  position: absolute;
+}
+
+.bitcoins1-light {
+  position: absolute;
+  height: 191px;
+  width: 202px;
+  background: radial-gradient(50.02% 50% at 50.01% 50.03%, #04CAAA 0%, #06B195 14.9%, #077B6A 34.69%, #0A6849 52.4%, #000000 100%);
+  mix-blend-mode: color-dodge;
+  right: 124px;
+  bottom: 43px;
+}
+
+.bitcoins2 {
+  right: 66px;
+  bottom: 190px;
+  position: absolute;
+}
+
+.bitcoins2-light {
+  position: absolute;
+  height: 67px;
+  width: 70px;
+  background: radial-gradient(50.02% 50% at 50.01% 50.03%, #0A957F 0%, #09927C 14.9%, #077B6A 34.69%, #0A6849 52.4%, #000000 100%);
+  mix-blend-mode: color-dodge;
+  right: 45px;
+  bottom: 208px;
+}
+
+.bitcoins3 {
+  right: 53px;
+  bottom: 19px;
+  position: absolute;
+}
+
+.ellipse::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 36vw;
+  height: 46vw;
+  background: radial-gradient(50.43% 70.73% at 43.59% 47.21%, #437EEF 0%, #0222C7 11.89%, #07207A 26.69%, #100A57 61.3%, #120D3B 93.96%, #140C43 100%);
+  -webkit-filter: blur(200px);
+  filter: blur(200px);
+  -webkit-transform: matrix(0.71, 0.41, -1.22, 0.71, 0, 0);
+  transform: matrix(0.71, 0.41, -1.22, 0.71, 0, 0);
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
